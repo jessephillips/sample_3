@@ -1,12 +1,14 @@
 Sample3::Application.routes.draw do
+
 	root :to => "pages#home"
 	
 	# the below is called "named routes"
 	# creates contact_path, 
-  match '/contact', :to => 'pages#contact'
-  match '/about',   :to => 'pages#about'
-  match '/help',    :to => 'pages#help'
-
+	match '/contact', :to => 'pages#contact'
+  	match '/about',   :to => 'pages#about'
+	match '/help',    :to => 'pages#help'
+	match '/signup', :to => 'users#new'
+	
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
