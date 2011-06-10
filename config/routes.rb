@@ -1,5 +1,6 @@
 Sample3::Application.routes.draw do
 
+	resources :users
 	root :to => "pages#home"
 	
 	# the below is called "named routes"
